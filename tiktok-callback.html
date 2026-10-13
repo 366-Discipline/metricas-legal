@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Conectando… · 366 Discipline Métricas</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main class="contenedor" style="padding-top:80px;text-align:center">
+  <img class="logo" style="margin:0 auto 24px" src="img/logo-366-discipline.png" alt="366 Discipline">
+  <p>Volviendo a la herramienta interna de 366 Discipline…</p>
+  <p class="nota">Esta página solo reenvía a la computadora de quien inició la conexión. No guarda ni envía datos a ningún otro sitio.</p>
+</main>
+<script>
+  // Reenvía la respuesta de TikTok (código y estado) al panel que corre en el equipo de quien se está conectando.
+  location.replace("http://localhost:3366/api/auth/tiktok/callback" + location.search);
+</script>
+</body>
+</html>
