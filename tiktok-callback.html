@@ -11,11 +11,12 @@
 <main class="contenedor" style="padding-top:80px;text-align:center">
   <img class="logo" style="margin:0 auto 24px" src="img/logo-366-discipline.png" alt="366 Discipline">
   <p>Volviendo a la herramienta interna de 366 Discipline…</p>
-  <p class="nota">Esta página solo reenvía a la computadora de quien inició la conexión. No guarda ni envía datos a ningún otro sitio.</p>
+  <p class="nota">Esta página solo reenvía al panel interno de 366 Discipline. No guarda ni envía datos a ningún otro sitio.</p>
 </main>
 <script>
-  // Reenvía la respuesta de TikTok (código y estado) al panel que corre en el equipo de quien se está conectando.
-  location.replace("http://localhost:3366/api/auth/tiktok/callback" + location.search);
+  // Reenvía la respuesta de TikTok (código y estado) al panel. Desde el 15-10-2026 el panel vive en el servidor;
+  // para probar en una computadora con el panel local, agregar #local a esta dirección no sirve: se cambia esta línea.
+  location.replace("https://366discipline.waterpanelsystems.com/api/auth/tiktok/callback" + location.search);
 </script>
 </body>
 </html>
